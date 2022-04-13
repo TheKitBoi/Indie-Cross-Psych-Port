@@ -4,7 +4,7 @@ function onCreate()
     setLuaSpriteScrollFactor('cielo', 0.5, 0.5);
 	scaleObject('cielo', 2.0, 2.0);
 
-	makeLuaSprite('bosque', 'Cuphead/angry/CH-RN-01', -125, 150);
+	makeLuaSprite('bosque', 'Cuphead/angry/CH-RN-01', -90, 150);
     setLuaSpriteScrollFactor('bosque', 1.3, 1.3);
 	setLuaSpriteScrollFactor('bosque', 0.99, 0.99);
 	scaleObject('bosque', 2.0, 2.0);
@@ -191,8 +191,95 @@ function onUpdate() -- The Main Code
 end
 
 function onStepHit()
-    if curStep == 142 then
-       --triggerEvent('exN','','')
-     --  triggerEvent('exR', '', '')
+    if curStep == 1048 then
+        doTweenZoom('oh boy', 'camGame', 1.25, 13.5, 'quadOut')
+    end
+
+    if curStep == 1176 then
+        cameraShake('hud', 0.05, 0.05)
+        doTweenZoom('oh boy lol', 'camGame', 2, 0.2, 'quadOut')
+        triggerEvent('Camera Follow Pos', '1200', '700')
+    end
+
+    if curStep == 1208 then
+        doTweenZoom('oh boy3', 'camGame', 1.6, 0.2, 'quadOut')
+    end
+
+    if curStep == 1168 then
+        doTweenZoom('oh boy4', 'camGame', 1, 0.5, 'backOut')
+    end
+
+    if curStep == 1264 then
+        doTweenZoom('oh they are mad', 'camGame', 1.6, 2, 'quadOut')
+    end
+
+    if curStep == 1328 then
+        doTweenZoom('oh they are mad', 'camGame', 1.6, 2, 'backOut')
+    end
+
+    if curStep == 1375 then
+        doTweenZoom('oh they are mad', 'camGame', 1.6, 0.2, 'bounceOut')
+    end
+
+    if curStep == 1378 then
+        doTweenZoom('oh they are mad', 'camGame', 1, 0.2, 'bounceOut')
+    end
+
+    if curStep == 1384 then
+        doTweenZoom('oh they are mad2', 'camGame', 1.6, 0.2, 'bounceOut')
+    end
+
+    if curStep == 1386 then
+        doTweenZoom('oh they are mad2', 'camGame', 1, 0.2, 'bounceOut')
+    end
+
+    if curStep == 1392 then
+        doTweenZoom('oh they are mad2', 'camGame', 1.5, 0.5, 'backOut')
+    end
+
+    
+
+    if curStep == 1439 then
+        doTweenZoom('oh they are mad', 'camGame', 1.6, 0.2, 'bounceOut')
+    end
+
+    if curStep == 1443 then
+        doTweenZoom('oh they are mad', 'camGame', 1, 0.2, 'bounceOut')
+    end
+
+    if curStep == 1448 then
+        doTweenZoom('oh they are mad2', 'camGame', 1.6, 0.2, 'bounceOut')
+    end
+
+    if curStep == 1451 then
+        doTweenZoom('oh they are mad2', 'camGame', 1, 0.2, 'bounceOut')
+    end
+
+    if curStep == 1455 then
+        doTweenZoom('oh they are mad2', 'camGame', 1.5, 0.5, 'backOut')
+    end
+
+    if curStep == 1472 then
+        doTweenZoom('oh they are mad3', 'camGame', 1.5, 6.5, 'quadInOut')
+    end
+
+    if curStep == 1520 then
+        doTweenZoom('oh they are mad3', 'camGame', 0.9, 1, 'cubicOut')
+    end
+
+    if curStep == 1551 then
+        doTweenZoom('oh they are mad4', 'camGame', 1.25, 1, 'cubicOut')
+    end
+
+    if curStep == 1568 then
+        doTweenZoom('oh they are mad 4', 'camGame', 1.25, 1, 'cubicOut')
+    end
+
+    if curStep == 1584 then
+        doTweenZoom('oh they are mad 5', 'camGame', 1.5, 5, 'bounceOut')
+    end
+
+    if curStep == 1600 then
+        doTweenZoom('oh they are mad 5', 'camGame', 1, 1, 'bounceOut')
     end
 end
