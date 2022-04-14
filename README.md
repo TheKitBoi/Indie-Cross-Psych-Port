@@ -39,3 +39,22 @@ most importantly
 
 dodging mechanic for knockout!
 -----------------------------------------------------------------------
+
+
+
+Update Log 4/13/22
+
+No commits yet, ill do them tomorrow
+Changes today include
+-- Added Attack functionality (not complete yet)
+-- Added improved animations to dodging (using sprite sheets)
+-- Added roundabout mechanic. Coded by: CappuchinoChugger, Edited by me.
+-- fixed some offsets with the stage setting
+
+Tomorrows plans? 
+-- Finish attack mechanic
+-- Add other difficulties for Knockout (Hard is the only one that exists, currently)
+-- Add invididual song data to Knockout (Window name, cutscene, etc)
+-- Fix bug where every parry note hit starts the Ex Card animation (easy fix)
+
+thats it for today, see you tomorrow
