@@ -58,3 +58,19 @@ Tomorrows plans?
 -- Fix bug where every parry note hit starts the Ex Card animation (easy fix)
 
 thats it for today, see you tomorrow
+
+Update Log 4/14/22
+
+No commits yet, I was initially going to do them tonight but I decided to work on the mechanics more and flesh them out before i sent out an update
+Changes today include
+-- Increased functionality with parry notes and peashooters.
+-- Chaser exists now
+-- SongData for Knockout. Window name, death message, etc
+-- song credits in game like the actual mod
+-- camera grain for cuphead
+-- week 1 and 3 story mode changes! (bg, story mode image, etc)
+-- Made roundabout's go behind the player first, and then go over the player (like the mod, and like cuphead)
+tomorrows plans?
+finish cuphead week. Start on sans.
+
+thats all for today, ill push commits tomorrow!
