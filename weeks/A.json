@@ -1,0 +1,41 @@
+{
+	"storyName": "It's time to Double Down!",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "gaming",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"gamingC",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Technicolor-tussle",
+			"cuphead",
+			[
+				160,
+				255,
+				160
+			]
+		],
+		[
+			"Knockout",
+			"cuphead MAD",
+			[
+				0,
+				60,
+				120
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Dont Deal With The Devil",
+	"hiddenUntilUnlocked": false
+}
