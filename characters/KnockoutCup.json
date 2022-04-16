@@ -1,147 +1,147 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-108,
 				-353
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "Left instance"
+			"fps": 24,
+			"name": "Left instance",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-191,
 				-377
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Down instance"
+			"fps": 24,
+			"name": "Down instance",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-167,
 				-283
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "Up instance"
+			"fps": 24,
+			"name": "Up instance",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-198,
 				-340
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Right instance"
+			"fps": 24,
+			"name": "Right instance",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-114,
 				-370
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT-alt",
-			"fps": 24,
-			"name": "Pewleft instance",
-			"indices": []
+			"indices": [],
+			"name": "Pewleft instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-183,
-				-383
+				-193,
+				-373
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN-alt",
-			"fps": 24,
-			"name": "pewdown instance",
-			"indices": []
+			"indices": [],
+			"name": "pewdown instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-161,
-				-322
+				-160,
+				-311
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP-alt",
-			"fps": 24,
-			"name": "PewUp instance",
-			"indices": []
+			"indices": [],
+			"name": "PewUp instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-184,
-				-359
+				-204,
+				-339
 			],
-			"anim": "singRIGHT-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "PewRight instance",
-			"indices": []
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "PewRight instance"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				-190,
 				-357
 			],
-			"anim": "idle",
+			"loop": true,
 			"fps": 24,
-			"name": "1 instance",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "1 instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-176,
 				-356
 			],
-			"anim": "Roundabout",
+			"loop": false,
 			"fps": 24,
-			"name": "Roundattack instance",
-			"indices": []
+			"anim": "Roundabout",
+			"indices": [],
+			"name": "Roundattack instance"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				-186,
 				-364
 			],
-			"anim": "idle-alt",
+			"loop": true,
 			"fps": 24,
-			"name": "DIE BITCH instance",
-			"indices": []
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "DIE BITCH instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				22,
 				-193
 			],
-			"anim": "Hadouken",
+			"loop": false,
 			"fps": 24,
-			"name": "Hadoken!! instance",
-			"indices": []
+			"anim": "Hadouken",
+			"indices": [],
+			"name": "Hadoken!! instance"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-119,
 				-364
 			],
-			"anim": "Ouch",
+			"loop": false,
 			"fps": 24,
-			"name": "Ouch instance",
-			"indices": []
+			"anim": "Ouch",
+			"indices": [],
+			"name": "Ouch instance"
 		}
 	],
 	"no_antialiasing": false,
