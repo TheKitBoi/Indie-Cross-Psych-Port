@@ -1,4 +1,13 @@
 function onCreate()
+
+    precacheImage('cielo')
+    precacheImage('bosque')
+    precacheImage('piso')
+    precacheImage('lluvia')
+    precacheImage('lluvia2')
+    precacheImage('musicCredits')
+    precacheImage('oldCamera')
+    
 --RANGO 1 Partes que no consuman muchos recurso o lo esencial.
 	makeLuaSprite('cielo', 'Cuphead/angry/CH-RN-00', 0, 0);
     setLuaSpriteScrollFactor('cielo', 0.5, 0.5);
@@ -9,7 +18,7 @@ function onCreate()
 	setLuaSpriteScrollFactor('bosque', 0.99, 0.99);
 	scaleObject('bosque', 2.0, 2.0);
 
-	makeLuaSprite('piso', 'Cuphead/angry/CH-RN-02', 0, 0);
+	makeLuaSprite('piso', 'Cuphead/angry/CH-RN-02', -100, 10);
 	scaleObject('piso', 2.0, 2.0);
 	setLuaSpriteScrollFactor('piso', 0.99, 0.99);
 
@@ -25,6 +34,12 @@ function onCreate()
 
 	scaleObject('lluvia2', 1.0, 1.0);
 
+    makeLuaSprite('musicCredits', 'Cuphead/MusicBars/Knockout', 1400, 550);
+	scaleObject('musicCredits', 0.75, 0.75);
+	setLuaSpriteScrollFactor('musicCredits', 1, 1);
+    setObjectCamera('musicCredits', 'camOther');
+    setObjectOrder('musicCredits', '20');
+
 --RANGO3 Va a leer en orden y podras usar el setObjectOrder para ponerlo encima de girfriend.
 
     addLuaSprite('cielo', false);
@@ -35,15 +50,18 @@ function onCreate()
     addAnimationByPrefix('lluvia2', 'idle', 'RainFirstlayer instance 1', '24', true);
     setObjectOrder('lluvia2', '7');
 
+    makeAnimatedLuaSprite('grainCamera', 'Cuphead/Grainshit', 0, 0);
+    addAnimationByPrefix('grainCamera', 'idle', 'Geain instance', '24', true);
+    setObjectCamera('grainCamera', 'other');
+    scaleObject('grainCamera', 1, 1);
+    addLuaSprite('grainCamera', true);
 
-    -- hadouken
+    makeAnimatedLuaSprite('oldCamera', 'Cuphead/stuff', 0, 0);
+    addAnimationByPrefix('oldCamera', 'idle', 'Cupheadshit_gif instance', '24', true);
+    setObjectCamera('oldCamera', 'other');
+    scaleObject('oldCamera', 1, 1);
+    addLuaSprite('oldCamera', true);
 
-    makeAnimatedLuaSprite('Bullet', 'Cuphead/bull/Cuphead Hadoken', 350, 620)
-    luaSpriteAddAnimationByPrefix('Bullet', 'Bullet', 'Hadolen instance 1', 24, true)
-    luaSpriteAddAnimationByPrefix('Bullet', 'Burst', 'BurstFX instance 1', 24, false)
-    addLuaSprite('Bullet', true)
-    scaleObject('Bullet', 0.55, 0.55)
-    setProperty('Bullet.alpha', 0)
 end
 
 function onCreatePost()
@@ -281,5 +299,16 @@ function onStepHit()
 
     if curStep == 1600 then
         doTweenZoom('oh they are mad 5', 'camGame', 1, 1, 'bounceOut')
+    end
+end
+
+function onSongStart()
+    doTweenX('songCredits', 'musicCredits', 800, 2, 'backOut')
+    runTimer('songCreditsHide', 5)
+end
+
+function onTimerCompleted(timerEnd)
+    if timerEnd == 'songCreditsHide' then
+        doTweenX('songCredits', 'musicCredits', 1400, 2, 'backOut')
     end
 end
